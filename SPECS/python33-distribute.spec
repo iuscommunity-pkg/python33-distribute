@@ -10,7 +10,7 @@
 %define real_name python-distribute
 
 Name:           python%{pyver}-distribute
-Version:        0.6.34
+Version:        0.6.35
 Release:        1.ius%{?dist}
 Summary:        Easily download, build, install, upgrade, and uninstall Python packages
 Vendor:         IUS Community Project 
@@ -76,6 +76,9 @@ rm -rf $RPM_BUILD_ROOT
 %{python_sitelib}/_markerlib
 
 %changelog
+* Thu Feb 28 2013 Ben Harper <ben.harper@rackspace.com> - 0.6.35-1.ius
+- Latest sources from upstream
+
 * Wed Jan 02 2013 Jeffrey Ness <jeffrey.ness@rackspace.com> - 0.6.34-1.ius
 - Latest sources from upstream
 

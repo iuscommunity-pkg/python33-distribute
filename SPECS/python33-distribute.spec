@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/easy_install-%{pybasever}
 %{python_sitelib}/distribute-%{version}-py%{pybasever}.egg-info
 %{python_sitelib}/easy_install.py*
-%{python_sitelib}/site.py*
 %{python_sitelib}/pkg_resources.py*
 %{python_sitelib}/setuptools
 %{python_sitelib}/setuptools-0.6c11-py%{pybasever}.egg-info
@@ -78,6 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue May 28 2013 Ben Harper <ben.harper@rackspace.com> - 0.6.43-1.ius
 - Latest sources from upstream
+- remove %{python_sitelib}/site.py* from %files
 
 * Tue May 14 2013 Ben Harper <ben.harper@rackspace.com> - 0.6.40-1.ius
 - Latest sources from upstream
